@@ -1,0 +1,9 @@
+msg -- push -- obj -- contain-> chatid, Users[receiver, sender];
+
+//task2 (Problem msg -> resend -> uuid -- new create) //resolve
+
+  check foundUser.msg.Users[0] === receiver username { chatid == foundUser.msg,chatid}{
+      else{
+          create new uuid;
+      }
+  }
